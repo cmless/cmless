@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  A seamless front end build tool
+  A seamless build tool for dazzling front end projects
 </p>
 
 <hr />

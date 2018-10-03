@@ -1,5 +1,5 @@
 <center>
-  ![cmless](https://github.com/cmless/cmless/logo.svg)
+  ![cmless](https://github.com/cmless/cmless/blob/master/logo.svg)
 
   A seamless front end build tool.
 </center>

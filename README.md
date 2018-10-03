@@ -1,11 +1,15 @@
-<center>
-  <img src="https://raw.githubusercontent.com/cmless/cmless/master/logo.png" />
+<p align="center">
+  <img alt="cmless" src="https://raw.githubusercontent.com/cmless/cmless/master/logo.png" />
+</p>
 
-  A seamless front end build tool.
-</center>
+<p align="center">
+  A seamless front end build tool
+</p>
 
-## Installation
-### Local
+<hr />
+
+# Installation
+## Local
 To install the package as a development dependency of your project:
 ```
 npm install cmless -D
@@ -25,7 +29,7 @@ Then modify your `package.json` file:
 
 You can then execute `npm start` or `npm run build` in the command line.
 
-### Global
+## Global
 Alternatively, install the package globally:
 ```
 npm install cmless -g
@@ -33,14 +37,14 @@ npm install cmless -g
 
 Then run the commands from any compatible project.
 
-## Commands
+# Commands
 ### `cmless start`
-Starts a new development server
+Start a new development server
 
 ### `cmless build`
-Builds your application for production.
+Build your application for production.
 
-## Options
+# Options
 Modify the `cmless` object in your project's `package.json` to change build options. For the default configuration, see this project's [`package.json`](./package.json).
 
 - `browserslist` - a list of target browsers to autoprefix CSS for. See [Browserslist](https://github.com/browserslist/browserslist) documentation
@@ -50,7 +54,7 @@ Modify the `cmless` object in your project's `package.json` to change build opti
   - `template` - the main HTML template file
   - `script` - the main JavaScript / TypeScript file
   - `style` - a JavaScript / TypeScript file exporting variables that can be used in CSS, HTML, and JavaScript
-  - `pwa`
+  - `pwa` - see available options in the [webpack PWA manifest](https://github.com/arthurbergmz/webpack-pwa-manifest#webpackpwamanifestoptions) documentation
   - `env` - environment variables, for example the `NODE_ENV` variable can be used with `process.env.NODE_ENV`
   - `assets` - a list of file extensions supported by the file loader
   - `output` - the folder output files will be saved to after building for production

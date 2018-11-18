@@ -1,5 +1,5 @@
 const { join, extname } = require('path');
-require('ts-node').register();
+require('ts-node').register({ compilerOptions: { module: 'commonjs' } });
 
 const requireOptionally = require('./require-optionally');
 
@@ -63,8 +63,22 @@ module.exports = (options) => {
     plugins.push(new webpack.EnvironmentPlugin(cmless.env));
   }
 
+  // Code splitting
+  const optimization = {
+    splitChunks: {
+      cacheGroups: {
+        vendor: {
+          test: /node_modules/,
+          name: 'vendor',
+          chunks: 'initial',
+          minSize: 50e3,
+          enforce: true,
+        },
+      },
+    },
+  };
+
   // Style
-  const optimization = {};
   if (cmless.style && options.production) {
     const MiniCssExtractPlugin = require('mini-css-extract-plugin');
     plugins.push(new MiniCssExtractPlugin({ filename: '[name].[hash].css' }));

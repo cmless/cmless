@@ -64,20 +64,7 @@ module.exports = (options) => {
   }
 
   // Style
-  const optimization = {
-    splitChunks: {
-      cacheGroups: {
-        vendor: {
-          test: /node_modules/,
-          name: 'vendor',
-          chunks: 'initial',
-          minSize: 50e3,
-          enforce: true,
-        },
-      },
-    },
-  };
-
+  const optimization = {};
   if (cmless.style && options.production) {
     const MiniCssExtractPlugin = require('mini-css-extract-plugin');
     plugins.push(new MiniCssExtractPlugin({ filename: '[name].[hash].css' }));

@@ -3,6 +3,7 @@
   "compilerOptions": {
     "allowJs": true,
     "experimentalDecorators": true,
+    "moduleResolution": "node",
     "noImplicitAny": true,
     "noImplicitReturns": true,
     "noUnusedLocals": true,

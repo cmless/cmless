@@ -2,7 +2,10 @@
   "compileOnSave": false,
   "compilerOptions": {
     "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
     "experimentalDecorators": true,
+    "importHelpers": true,
     "moduleResolution": "node",
     "noImplicitAny": true,
     "noImplicitReturns": true,
@@ -12,7 +15,6 @@
     "suppressImplicitAnyIndexErrors": false,
 
     "baseUrl": "src",
-    "importHelpers": true,
     "lib": [
       "dom",
       "es5",
